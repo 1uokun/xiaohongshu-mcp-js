@@ -9,12 +9,22 @@
 
 使用 xiaohongshu-mcp 进行发布。
 ```
+AI Agent 只负责“想清楚要做什么”，但不能直接“动手操作网页”，是 MCP 提供了这样的能力。
 
 ## 🍕 场景一：“使用 xiaohongshu-mcp 进行 xxx”
 
 claude 是如何知道 xiaohongshu-mcp 这个特定名称的东西呢？
 
-使用 claude mcp 注册即可
+1️⃣ 首先，启动本express项目：
+```bash
+# node v20 拉取依赖
+npm i
+
+# 启动 localhost:3000 express 服务
+npm start
+```
+
+2️⃣ 使用 claude mcp 注册即可
 
 ```bash
 # 添加 HTTP MCP 服务器
@@ -68,6 +78,9 @@ STDIO 和 SSE、Streamable HTTP 是什么区别？
  - inspector 测试截图 ⬇️
    <img src="./assets/registerTool.png" />
 
+<br/>
+<br/>
+<br/>
 
 ## 🔐 场景二：检查小红书登录状态
 
